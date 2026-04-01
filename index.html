@@ -984,6 +984,330 @@
           font-size: 17px;
         }
       }
+
+      .inv-resumen-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        padding: 14px 16px;
+        text-align: center;
+      }
+      .inv-resumen-card label {
+        display: block;
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+      .inv-resumen-card .val {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 28px;
+        font-weight: 300;
+        color: var(--dark);
+      }
+      .inv-resumen-card .val.gold {
+        color: var(--gold);
+      }
+      .inv-resumen-card .val.sage {
+        color: var(--sage);
+      }
+      .inv-resumen-card .val.danger {
+        color: var(--danger);
+      }
+      .inv-row {
+        display: grid;
+        grid-template-columns: 2fr 70px 110px 100px 120px 40px;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 14px;
+        border-bottom: 1px solid #f5f5f5;
+        background: white;
+        font-size: 12px;
+      }
+      .inv-row:hover {
+        background: var(--warm-white);
+      }
+      .inv-header {
+        background: var(--dark) !important;
+        color: var(--cream);
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .inv-table {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .inv-group-header {
+        background: var(--cream);
+        padding: 8px 14px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: 1px solid var(--border);
+      }
+      .conf-si {
+        background: #d4edda;
+        color: #2d6a4f;
+        font-size: 9px;
+        padding: 3px 8px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-family: "DM Mono", monospace;
+      }
+      .conf-no {
+        background: #f8d7da;
+        color: #842029;
+        font-size: 9px;
+        padding: 3px 8px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-family: "DM Mono", monospace;
+      }
+      .conf-pendiente {
+        background: #f0ede8;
+        color: var(--muted);
+        font-size: 9px;
+        padding: 3px 8px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-family: "DM Mono", monospace;
+      }
+      .padrino-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        padding: 14px 16px;
+        margin-bottom: 8px;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        gap: 16px;
+        align-items: center;
+      }
+      .padrino-nombre {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 19px;
+        font-weight: 400;
+      }
+      .padrino-concepto {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 3px;
+      }
+      .padrino-monto {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--dark);
+        white-space: nowrap;
+      }
+      .padrinos-total-bar {
+        background: var(--dark);
+        color: var(--cream);
+        border-radius: 2px;
+        padding: 14px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+      .venues-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border: 1px solid var(--border);
+      }
+      .venues-table th {
+        background: var(--dark);
+        color: var(--cream);
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 14px;
+        text-align: left;
+        font-weight: 400;
+      }
+      .venues-table td {
+        padding: 10px 14px;
+        border-bottom: 1px solid #f5f5f5;
+        font-size: 12px;
+        vertical-align: top;
+      }
+      .venue-link {
+        color: var(--gold);
+        text-decoration: none;
+        font-size: 11px;
+      }
+      .cita-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        padding: 14px 16px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 80px 1fr auto;
+        gap: 16px;
+        align-items: start;
+      }
+      .cita-dia {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 32px;
+        font-weight: 300;
+        color: var(--gold);
+        line-height: 1;
+      }
+      .cita-mes {
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+      .cita-hora {
+        font-size: 10px;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .cita-titulo {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 4px;
+      }
+      .cita-lugar {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .cita-nota {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 4px;
+        font-style: italic;
+      }
+      .cita-pasada {
+        opacity: 0.45;
+      }
+      .pago-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        gap: 16px;
+        align-items: center;
+      }
+      .pago-concepto {
+        font-size: 13px;
+        color: var(--dark);
+      }
+      .pago-detalle {
+        font-size: 10px;
+        color: var(--muted);
+        margin-top: 3px;
+      }
+      .pago-monto {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--dark);
+        white-space: nowrap;
+      }
+      .pago-fecha {
+        font-size: 10px;
+        color: var(--muted);
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+      .pagos-total {
+        background: var(--dark);
+        color: var(--cream);
+        border-radius: 2px;
+        padding: 14px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+      .pinterest-wrap {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        padding: 28px;
+        text-align: center;
+      }
+      .pinterest-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 8px;
+      }
+      .pinterest-sub {
+        font-size: 11px;
+        color: var(--muted);
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+      }
+      .pinterest-btn {
+        display: inline-block;
+        background: #e60023;
+        color: white;
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 12px 28px;
+        border-radius: 2px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+      .check-edit-btn {
+        background: none;
+        border: none;
+        color: var(--border);
+        cursor: pointer;
+        font-size: 12px;
+        padding: 3px;
+        transition: color 0.2s;
+        flex-shrink: 0;
+      }
+      .check-edit-btn:hover {
+        color: var(--gold);
+      }
+      .timeline-edit-btn {
+        background: none;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        cursor: pointer;
+        font-size: 10px;
+        padding: 3px 10px;
+        border-radius: 2px;
+        font-family: "DM Mono", monospace;
+        letter-spacing: 1px;
+        transition: all 0.2s;
+        margin-top: 8px;
+        display: inline-block;
+      }
+      .timeline-edit-btn:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
     </style>
   </head>
   <body>
@@ -1046,6 +1370,18 @@
       <button class="tab" onclick="switchTab('timeline', this)">
         📅 Timeline
       </button>
+      <button class="tab" onclick="switchTab('invitados', this)">
+        👥 Invitados
+      </button>
+      <button class="tab" onclick="switchTab('padrinos', this)">
+        🎗️ Padrinos
+      </button>
+      <button class="tab" onclick="switchTab('venues', this)">🏛️ Venues</button>
+      <button class="tab" onclick="switchTab('agenda', this)">📆 Agenda</button>
+      <button class="tab" onclick="switchTab('pagos', this)">💳 Pagos</button>
+      <button class="tab" onclick="switchTab('pinterest', this)">
+        📌 Pinterest
+      </button>
     </div>
 
     <div class="content">
@@ -1071,6 +1407,63 @@
       </div>
       <div class="panel" id="panel-timeline">
         <div class="timeline" id="timelineContainer"></div>
+      </div>
+      <div class="panel" id="panel-invitados">
+        <div
+          id="invitadosResumen"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 20px;
+          "
+        ></div>
+        <div id="invitadosContainer"></div>
+        <button class="add-cat-btn" onclick="openInvitadoModal()">
+          + Agregar invitado
+        </button>
+      </div>
+      <div class="panel" id="panel-padrinos">
+        <div id="padrinosResumen" style="margin-bottom: 20px"></div>
+        <div id="padrinosContainer"></div>
+        <button class="add-cat-btn" onclick="openPadrinoModal()">
+          + Agregar padrino
+        </button>
+      </div>
+      <div class="panel" id="panel-venues">
+        <div id="venuesContainer"></div>
+        <button class="add-cat-btn" onclick="openVenueModal()">
+          + Agregar venue
+        </button>
+      </div>
+      <div class="panel" id="panel-agenda">
+        <div id="agendaContainer"></div>
+        <button class="add-cat-btn" onclick="openCitaModal()">
+          + Agregar cita
+        </button>
+      </div>
+      <div class="panel" id="panel-pagos">
+        <div id="pagosContainer"></div>
+        <div
+          style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap"
+        >
+          <button
+            class="add-cat-btn"
+            style="flex: 1; min-width: 180px"
+            onclick="openPagoModal()"
+          >
+            + Registrar pago</button
+          ><button
+            class="add-cat-btn"
+            style="flex: 1; min-width: 180px"
+            onclick="exportPagosPDF()"
+          >
+            📄 Exportar PDF
+          </button>
+        </div>
+      </div>
+      <div class="panel" id="panel-pinterest">
+        <div id="pinterestContainer"></div>
       </div>
     </div>
 
@@ -1104,6 +1497,257 @@
         © 2026 · Andy & Rob
       </div>
     </footer>
+
+    <!-- Modal Invitado -->
+    <div class="modal-overlay" id="invitadoModal">
+      <div class="modal">
+        <h2 id="invModalTitle">Nuevo invitado</h2>
+        <div class="modal-field">
+          <label>Nombre / Grupo</label
+          ><input type="text" id="invNombre" placeholder="Ej. Fam. Garcia" />
+        </div>
+        <div class="modal-field">
+          <label>Boletos</label
+          ><input type="number" id="invBoletos" placeholder="2" min="1" />
+        </div>
+        <div class="modal-field">
+          <label>Origen</label
+          ><select id="invOrigen">
+            <option value="mx">Mexico</option>
+            <option value="co">Colombia</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Confirmacion</label
+          ><select id="invConf">
+            <option value="pendiente">Pendiente</option>
+            <option value="si">Si confirma</option>
+            <option value="no">No confirma</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Mesa</label
+          ><input type="text" id="invMesa" placeholder="Ej. 3" />
+        </div>
+        <div class="modal-field">
+          <label>Telefono</label
+          ><input type="text" id="invTel" placeholder="Opcional" />
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closeInvitadoModal()">
+            Cancelar</button
+          ><button id="invDelBtn" onclick="deleteInvitado()" style="display:none;background:var(--danger);color:white;border:none;padding:11px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px">Eliminar</button><button
+            class="btn-primary"
+            id="invModalBtn"
+            onclick="saveInvitado()"
+          >
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Padrino -->
+    <div class="modal-overlay" id="padrinoModal">
+      <div class="modal">
+        <h2 id="padModalTitle">Nuevo padrino</h2>
+        <div class="modal-field">
+          <label>Nombre</label><input type="text" id="padNombre" />
+        </div>
+        <div class="modal-field">
+          <label>Concepto</label
+          ><input
+            type="text"
+            id="padConcepto"
+            placeholder="Ej. Pastel, Musica..."
+          />
+        </div>
+        <div class="modal-field">
+          <label>Monto estimado (MXN)</label
+          ><input type="number" id="padMonto" placeholder="0" />
+        </div>
+        <div class="modal-field">
+          <label>Estado</label
+          ><select id="padEstado">
+            <option value="pendiente">Pendiente</option>
+            <option value="confirmado">Confirmado</option>
+            <option value="pagado">Pagado</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Contacto</label><input type="text" id="padContacto" />
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closePadrinoModal()">
+            Cancelar</button
+          ><button
+            id="padDelBtn"
+            onclick="deletePadrino()"
+            style="
+              display: none;
+              background: var(--danger);
+              color: white;
+              border: none;
+              padding: 11px 16px;
+              font-family: &quot;DM Mono&quot;, monospace;
+              font-size: 10px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              cursor: pointer;
+              border-radius: 2px;
+            "
+          >
+            Eliminar</button
+          ><button class="btn-primary" id="padModalBtn" onclick="savePadrino()">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Venue -->
+    <div class="modal-overlay" id="venueModal">
+      <div class="modal">
+        <h2 id="venueModalTitle">Nuevo Venue</h2>
+        <div class="modal-field">
+          <label>Nombre</label><input type="text" id="vnName" />
+        </div>
+        <div class="modal-field">
+          <label>Ubicacion</label><input type="text" id="vnUbicacion" />
+        </div>
+        <div class="modal-field">
+          <label>Capacidad</label
+          ><input type="number" id="vnCapacidad" placeholder="150" />
+        </div>
+        <div class="modal-field">
+          <label>Precio aprox (MXN)</label
+          ><input type="number" id="vnPrecio" placeholder="0" />
+        </div>
+        <div class="modal-field">
+          <label>Contacto</label><input type="text" id="vnContacto" />
+        </div>
+        <div class="modal-field">
+          <label>Link</label
+          ><input type="url" id="vnLink" placeholder="https://..." />
+        </div>
+        <div class="modal-field">
+          <label>Calificacion</label
+          ><select id="vnRating">
+            <option value="0">Sin calificar</option>
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Notas</label><textarea id="vnNotas" rows="2"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closeVenueModal()">
+            Cancelar</button
+          ><button id="venueDelBtn" onclick="deleteVenue()" style="display:none;background:var(--danger);color:white;border:none;padding:11px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px">Eliminar</button><button class="btn-primary" id="venueModalBtn" onclick="saveVenue()">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Cita -->
+    <div class="modal-overlay" id="citaModal">
+      <div class="modal">
+        <h2 id="citaModalTitle">Nueva Cita</h2>
+        <div class="modal-field">
+          <label>Titulo</label><input type="text" id="ctTitulo" />
+        </div>
+        <div class="modal-field">
+          <label>Fecha</label><input type="date" id="ctFecha" />
+        </div>
+        <div class="modal-field">
+          <label>Hora</label><input type="time" id="ctHora" />
+        </div>
+        <div class="modal-field">
+          <label>Lugar</label><input type="text" id="ctLugar" />
+        </div>
+        <div class="modal-field">
+          <label>Nota</label><textarea id="ctNota" rows="2"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closeCitaModal()">
+            Cancelar</button
+          ><button id="citaDelBtn" onclick="deleteCita()" style="display:none;background:var(--danger);color:white;border:none;padding:11px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px">Eliminar</button><button class="btn-primary" id="citaModalBtn" onclick="saveCita()">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Pago -->
+    <div class="modal-overlay" id="pagoModal">
+      <div class="modal">
+        <h2 id="pagoModalTitle">Registrar Pago</h2>
+        <div class="modal-field">
+          <label>Concepto</label><input type="text" id="pgConcepto" />
+        </div>
+        <div class="modal-field">
+          <label>Monto (MXN)</label
+          ><input type="number" id="pgMonto" placeholder="0" />
+        </div>
+        <div class="modal-field">
+          <label>Fecha</label><input type="date" id="pgFecha" />
+        </div>
+        <div class="modal-field">
+          <label>Metodo</label
+          ><select id="pgMetodo">
+            <option>Transferencia</option>
+            <option>Efectivo</option>
+            <option>Tarjeta</option>
+            <option>Cheque</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Link comprobante (Drive)</label
+          ><input
+            type="url"
+            id="pgLink"
+            placeholder="https://drive.google.com/..."
+          />
+        </div>
+        <div class="modal-field">
+          <label>Notas</label><textarea id="pgNota" rows="2"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closePagoModal()">
+            Cancelar</button
+          ><button id="pagoDelBtn" onclick="deletePago()" style="display:none;background:var(--danger);color:white;border:none;padding:11px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px">Eliminar</button><button class="btn-primary" id="pagoModalBtn" onclick="savePago()">
+            Registrar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Pinterest -->
+    <div class="modal-overlay" id="pinterestModal">
+      <div class="modal">
+        <h2>Liga de Pinterest</h2>
+        <div class="modal-field">
+          <label>URL del tablero</label
+          ><input
+            type="url"
+            id="ptUrl"
+            placeholder="https://www.pinterest.com/..."
+          />
+        </div>
+        <div class="modal-field">
+          <label>Nombre del tablero</label><input type="text" id="ptNombre" />
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closePinterestModal()">
+            Cancelar</button
+          ><button class="btn-primary" onclick="savePinterest()">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal editar concepto -->
     <div class="modal-overlay" id="editItemModal">
@@ -1231,7 +1875,7 @@
         <div class="modal-actions">
           <button class="btn-secondary" onclick="closeEditTimelineModal()">
             Cancelar</button
-          ><button class="btn-primary" onclick="saveEditTimeline()">
+          ><button id="tlDelBtn" onclick="deleteTimeline()" style="display:none;background:var(--danger);color:white;border:none;padding:11px 16px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px">Eliminar</button><button class="btn-primary" onclick="saveEditTimeline()">
             Guardar
           </button>
         </div>
@@ -1399,1190 +2043,6 @@
       </div>
     </div>
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-      import {
-        getFirestore,
-        doc,
-        setDoc,
-        getDoc,
-        onSnapshot,
-      } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyBS4nONiJL4nXA1nz1sgWVbqfF6XcDPN8s",
-        authDomain: "andy-y-rob.firebaseapp.com",
-        projectId: "andy-y-rob",
-        storageBucket: "andy-y-rob.firebasestorage.app",
-        messagingSenderId: "231833524712",
-        appId: "1:231833524712:web:1564d5fe6dfc0549beac5d",
-      };
-
-      const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
-      const DOC_REF = doc(db, "boda", "planificador");
-
-      const fmt = (n) =>
-        n || n === 0
-          ? "$" +
-            Number(n).toLocaleString("es-MX", {
-              minimumFractionDigits: 0,
-              maximumFractionDigits: 0,
-            })
-          : "—";
-
-      const DEFAULT_DATA = {
-        categories: [
-          {
-            id: "venue",
-            name: "Salón / Venue",
-            icon: "🏛️",
-            items: [
-              {
-                id: 1,
-                name: "Renta del salón",
-                note: "Incluye mobiliario básico",
-                estimated: 80000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 2,
-                name: "Arreglo de jardín / exterior",
-                note: "",
-                estimated: 15000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "catering",
-            name: "Catering y Banquetes",
-            icon: "🍽️",
-            items: [
-              {
-                id: 3,
-                name: "Cena por persona (aprox. 150)",
-                note: "",
-                estimated: 90000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 4,
-                name: "Barra de bebidas",
-                note: "Open bar 5 horas",
-                estimated: 35000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 5,
-                name: "Meseros / personal",
-                note: "",
-                estimated: 12000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 6,
-                name: "Pastel de bodas",
-                note: "",
-                estimated: 8000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "foto",
-            name: "Fotografía y Video",
-            icon: "📸",
-            items: [
-              {
-                id: 7,
-                name: "Fotógrafo",
-                note: "Cobertura completa + álbum",
-                estimated: 35000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 8,
-                name: "Videógrafo / Cinematic",
-                note: "Video highlight + film",
-                estimated: 28000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 9,
-                name: "Sesión de preboda",
-                note: "",
-                estimated: 8000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "musica",
-            name: "Música y Entretenimiento",
-            icon: "🎶",
-            items: [
-              {
-                id: 10,
-                name: "DJ",
-                note: "Sonido + luces + set completo",
-                estimated: 22000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 11,
-                name: "Música en vivo / ceremonia",
-                note: "Cuarteto o solista",
-                estimated: 10000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "flores",
-            name: "Decoración y Flores",
-            icon: "💐",
-            items: [
-              {
-                id: 12,
-                name: "Ramo de novia",
-                note: "",
-                estimated: 4500,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 13,
-                name: "Centros de mesa",
-                note: "Aprox. 15 mesas",
-                estimated: 18000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 14,
-                name: "Decoración de ceremonia",
-                note: "Altar, pétalos, caminero",
-                estimated: 12000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 15,
-                name: "Iluminación ambiental",
-                note: "",
-                estimated: 10000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "vestimenta",
-            name: "Vestimenta",
-            icon: "👗",
-            items: [
-              {
-                id: 16,
-                name: "Vestido de novia",
-                note: "",
-                estimated: 30000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 17,
-                name: "Velo / accesorios",
-                note: "",
-                estimated: 5000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 18,
-                name: "Traje del novio",
-                note: "",
-                estimated: 12000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 19,
-                name: "Maquillaje y peinado",
-                note: "Novia + prueba",
-                estimated: 6000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "ceremonia",
-            name: "Ceremonia",
-            icon: "💍",
-            items: [
-              {
-                id: 20,
-                name: "Iglesia / Juez civil",
-                note: "",
-                estimated: 8000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 21,
-                name: "Argollas de matrimonio",
-                note: "",
-                estimated: 15000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 22,
-                name: "Lazo, arras, cojines",
-                note: "",
-                estimated: 2500,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "papeleria",
-            name: "Papelería y Recuerdos",
-            icon: "💌",
-            items: [
-              {
-                id: 23,
-                name: "Invitaciones",
-                note: "",
-                estimated: 8000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 24,
-                name: "Recuerdos para invitados",
-                note: "",
-                estimated: 7500,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-          {
-            id: "logistica",
-            name: "Logística y Extras",
-            icon: "🚗",
-            items: [
-              {
-                id: 25,
-                name: "Transporte novios",
-                note: "",
-                estimated: 5000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 26,
-                name: "Coordinadora de bodas",
-                note: "",
-                estimated: 15000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 27,
-                name: "Luna de miel (anticipo)",
-                note: "Destino por definir",
-                estimated: 40000,
-                real: 0,
-                status: "pending",
-              },
-              {
-                id: 28,
-                name: "Fondo de imprevistos",
-                note: "5-10% del total",
-                estimated: 20000,
-                real: 0,
-                status: "pending",
-              },
-            ],
-          },
-        ],
-        checklist: [
-          {
-            group: "Inmediatamente (Meses 1-2)",
-            items: [
-              {
-                id: "c1",
-                text: "Definir fecha tentativa",
-                note: "Disponibilidad de ambas familias",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c2",
-                text: "Establecer presupuesto global",
-                note: "Con aportaciones si aplica",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c3",
-                text: "Lista de invitados (borrador)",
-                note: "El número define todo lo demás",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c4",
-                text: "Visitar y reservar el venue",
-                note: "Los buenos se agotan rápido",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c5",
-                text: "Contratar fotógrafo",
-                note: "Son los primeros en reservarse",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c6",
-                text: "Contratar videógrafo",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-            ],
-          },
-          {
-            group: "Primeros 4 meses",
-            items: [
-              {
-                id: "c7",
-                text: "Cotizar catering / banquetes",
-                note: "Hacer cata de menú",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c8",
-                text: "Buscar vestido de novia",
-                note: "Requiere meses para confección",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c9",
-                text: "Definir tipo de ceremonia",
-                note: "Civil / religiosa",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c10",
-                text: "Cotizar decoración y floristería",
-                note: "",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c11",
-                text: "Buscar DJ / música en vivo",
-                note: "",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c12",
-                text: "Decidir paleta de colores / temática",
-                note: "",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c13",
-                text: "Abrir mesa de regalos",
-                note: "Liverpool, El Palacio, etc.",
-                done: false,
-                priority: "baja",
-              },
-            ],
-          },
-          {
-            group: "4-8 meses antes",
-            items: [
-              {
-                id: "c14",
-                text: "Diseño y envío de invitaciones",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c15",
-                text: "Confirmación de invitados (RSVP)",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c16",
-                text: "Contratar maquillista / estilista",
-                note: "Hacer prueba con tiempo",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c17",
-                text: "Sesión de fotos de preboda",
-                note: "",
-                done: false,
-                priority: "baja",
-              },
-              {
-                id: "c18",
-                text: "Elegir y ajustar traje del novio",
-                note: "",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c19",
-                text: "Coordinar hospedaje invitados foráneos",
-                note: "",
-                done: false,
-                priority: "baja",
-              },
-              {
-                id: "c20",
-                text: "Elegir pastel y hacer degustación",
-                note: "",
-                done: false,
-                priority: "media",
-              },
-            ],
-          },
-          {
-            group: "1-3 meses antes",
-            items: [
-              {
-                id: "c21",
-                text: "Confirmar todos los proveedores",
-                note: "Revisar contratos y pagos",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c22",
-                text: "Itinerario detallado del día",
-                note: "Maquillaje, traslados, ceremonia, recepción",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c23",
-                text: "Prueba de vestido final",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c24",
-                text: "Lista de canciones / momentos especiales",
-                note: "Vals, entrada, brindis",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c25",
-                text: "Comprar argollas",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c26",
-                text: "Planear luna de miel",
-                note: "Reservas de vuelo y hotel",
-                done: false,
-                priority: "media",
-              },
-            ],
-          },
-          {
-            group: "Semana de la boda",
-            items: [
-              {
-                id: "c27",
-                text: "Reconfirmar hora y lugar con cada proveedor",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c28",
-                text: "Pago final de todos los servicios",
-                note: "",
-                done: false,
-                priority: "alta",
-              },
-              {
-                id: "c29",
-                text: "Delegar responsabilidades del día",
-                note: "Padrinos / familia",
-                done: false,
-                priority: "media",
-              },
-              {
-                id: "c30",
-                text: "Descansar y disfrutar ✨",
-                note: "Ya todo está listo",
-                done: false,
-                priority: "baja",
-              },
-            ],
-          },
-        ],
-        vendors: [],
-        timeline: [
-          {
-            date: "Abr–May 2026",
-            title: "El arranque",
-            tasks:
-              "· Definir fecha y presupuesto\n· Reservar venue\n· Contratar fotógrafo y videógrafo",
-            status: "active",
-          },
-          {
-            date: "Jun–Ago 2026",
-            title: "Los grandes contratos",
-            tasks:
-              "· Catering y banquetes\n· Vestido de novia\n· Música y DJ\n· Ceremonia definida",
-            status: "",
-          },
-          {
-            date: "Sep–Nov 2026",
-            title: "Los detalles",
-            tasks:
-              "· Invitaciones\n· Decoración y floristería\n· Maquillista y estilista\n· Sesión preboda",
-            status: "",
-          },
-          {
-            date: "Dic 2026 – Ene 2027",
-            title: "La recta final",
-            tasks:
-              "· RSVP confirmado\n· Prueba de vestido\n· Argollas compradas\n· Luna de miel reservada",
-            status: "",
-          },
-          {
-            date: "1 mes antes",
-            title: "Últimos detalles",
-            tasks:
-              "· Itinerario del día\n· Reconfirmar proveedores\n· Pagos finales",
-            status: "",
-          },
-          {
-            date: "¡El gran día! 🎊",
-            title: "Andy & Rob",
-            tasks: "· Todo está listo.\n· Solo queda disfrutarlo.",
-            status: "",
-          },
-        ],
-      };
-
-      let appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
-      let saveTimeout = null;
-      let currentCatId = null;
-      let itemNextId = 200;
-      let rendering = false;
-
-      // ── Firebase sync ──
-      async function loadFromFirebase() {
-        try {
-          const snap = await getDoc(DOC_REF);
-          if (snap.exists()) {
-            appData = snap.data();
-          } else {
-            await setDoc(DOC_REF, appData);
-          }
-          setSynced();
-        } catch (e) {
-          setOffline();
-        }
-        renderAll();
-        hideSplash();
-
-        // Live listener
-        onSnapshot(
-          DOC_REF,
-          (snap) => {
-            if (snap.exists() && !rendering) {
-              appData = snap.data();
-              renderAll();
-              setSynced();
-            }
-          },
-          () => setOffline(),
-        );
-      }
-
-      function scheduleSave() {
-        clearTimeout(saveTimeout);
-        saveTimeout = setTimeout(async () => {
-          try {
-            await setDoc(DOC_REF, appData);
-            setSynced();
-          } catch (e) {
-            setOffline();
-          }
-        }, 800);
-      }
-
-      function setSynced() {
-        document.getElementById("syncDot").className = "sync-dot";
-        document.getElementById("syncLabel").textContent = "en línea";
-      }
-      function setOffline() {
-        document.getElementById("syncDot").className = "sync-dot offline";
-        document.getElementById("syncLabel").textContent = "sin conexión";
-      }
-
-      function hideSplash() {
-        const s = document.getElementById("loading-screen");
-        s.classList.add("fade-out");
-        setTimeout(() => (s.style.display = "none"), 700);
-      }
-
-      // ── Render ──
-      function renderAll() {
-        rendering = true;
-        renderCategories();
-        renderChecklist();
-        renderVendors();
-        renderTimeline();
-        updateSummary();
-        rendering = false;
-      }
-
-      function renderCategories() {
-        const c = document.getElementById("categoriesContainer");
-        c.innerHTML = "";
-        (appData.categories || []).forEach((cat) => {
-          const estT = (cat.items || []).reduce(
-            (s, i) => s + (parseFloat(i.estimated) || 0),
-            0,
-          );
-          const realT = (cat.items || []).reduce(
-            (s, i) => s + (parseFloat(i.real) || 0),
-            0,
-          );
-          const div = document.createElement("div");
-          div.className = "category";
-          div.innerHTML = `
-      <div class="cat-title">
-        <div class="cat-title-left" onclick="toggleCat('${cat.id}')" style="flex:1;cursor:pointer"><span>${cat.icon}</span><span>${cat.name}</span></div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <div class="cat-totals"><span class="est">Est: ${fmt(estT)}</span><span class="real">Real: ${fmt(realT)}</span></div>
-          <button class="cat-edit-btn" onclick="openEditCatModal('${cat.id}')" title="Editar categoría">✏️</button>
-          <span class="cat-toggle" id="toggle-${cat.id}" onclick="toggleCat('${cat.id}')">▾</span>
-        </div>
-      </div>
-      <div class="cat-items" id="catItems-${cat.id}">
-        ${(cat.items || []).map((item) => itemRowHTML(cat.id, item)).join("")}
-        <div class="add-item-row"><button class="add-item-btn" onclick="openItemModal('${cat.id}')">+ Agregar concepto</button></div>
-      </div>`;
-          c.appendChild(div);
-        });
-      }
-
-      function itemRowHTML(catId, item) {
-        const diff =
-          (parseFloat(item.real) || 0) - (parseFloat(item.estimated) || 0);
-        const dc = diff > 0 ? "diff-pos" : diff < 0 ? "diff-neg" : "diff-zero";
-        const ds =
-          diff !== 0 ? fmt(Math.abs(diff)) + (diff > 0 ? " ↑" : " ↓") : "—";
-        const sl = {
-          pending: "Pendiente",
-          progress: "En proceso",
-          confirmed: "Confirmado",
-          paid: "Pagado",
-        };
-        return `<div class="budget-row">
-    <div><div class="item-name">${item.name}</div>${item.note ? `<div class="item-note">${item.note}</div>` : ""}</div>
-    <input class="budget-input" type="number" value="${item.estimated || ""}" placeholder="0" onchange="updateItem('${catId}',${item.id},'estimated',this.value)">
-    <input class="budget-input" type="number" value="${item.real || ""}" placeholder="0" onchange="updateItem('${catId}',${item.id},'real',this.value)">
-    <div class="diff-cell ${dc}">${ds}</div>
-    <div class="status-cell"><button class="status-badge status-${item.status}" onclick="cycleStatus('${catId}',${item.id})">${sl[item.status]}</button></div>
-    <div class="item-actions">
-      <button class="edit-btn" onclick="openEditItemModal('${catId}',${item.id})" title="Editar">✏️</button>
-      <button class="delete-btn" onclick="deleteItem('${catId}',${item.id})" title="Eliminar">✕</button>
-    </div>
-  </div>`;
-      }
-
-      function renderChecklist() {
-        document.getElementById("checklistContainer").innerHTML = (
-          appData.checklist || []
-        )
-          .map(
-            (g, gi) => `
-    <div class="checklist-group">
-      <div class="checklist-group-title" style="display:flex;justify-content:space-between;align-items:center">
-        <span>${g.group}</span>
-        <button class="check-edit-btn" onclick="openEditGroupModal(${gi})" title="Editar grupo">✏️</button>
-      </div>
-      ${(g.items || [])
-        .map(
-          (item) => `
-        <div class="check-item ${item.done ? "done" : ""}" id="chk-${item.id}">
-          <div class="check-box ${item.done ? "checked" : ""}" onclick="toggleCheck('${item.id}')"></div>
-          <div class="check-content">
-            <div class="check-label">${item.text}</div>
-            ${item.note ? `<div class="check-note">${item.note}</div>` : ""}
-          </div>
-          <span class="check-priority priority-${item.priority}">${item.priority}</span>
-          <button class="check-edit-btn" onclick="openEditCheckModal(${gi},'${item.id}')" title="Editar tarea">✏️</button>
-        </div>`,
-        )
-        .join("")}
-      <div style="padding:8px 0 2px">
-        <button class="add-item-btn" onclick="addCheckItem(${gi})">+ Agregar tarea</button>
-      </div>
-    </div>`,
-          )
-          .join("");
-      }
-
-      function renderVendors() {
-        const sl = {
-          pending: "Pendiente",
-          progress: "En revisión",
-          confirmed: "Confirmado",
-          paid: "Pagado",
-        };
-        document.getElementById("vendorsGrid").innerHTML = (
-          appData.vendors || []
-        )
-          .map(
-            (v) => `
-    <div class="vendor-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start">
-        <div class="vendor-cat">${v.cat}</div>
-        <button class="check-edit-btn" onclick="openEditVendorModal(${v.id})" title="Editar proveedor">✏️</button>
-      </div>
-      <div class="vendor-name">${v.name}</div>
-      <div class="vendor-contact">${v.contact || "—"}</div>
-      ${v.notes ? `<div style="font-size:11px;color:var(--muted);margin-bottom:8px">${v.notes}</div>` : ""}
-      <div class="vendor-status-row">
-        <div class="vendor-price">${fmt(v.price)}</div>
-        <button class="status-badge status-${v.status}" onclick="cycleVendorStatus(${v.id})">${sl[v.status]}</button>
-      </div>
-    </div>`,
-          )
-          .join("");
-      }
-
-      function renderTimeline() {
-        document.getElementById("timelineContainer").innerHTML = (
-          appData.timeline || []
-        )
-          .map(
-            (t, i) => `
-    <div class="timeline-item">
-      <div class="timeline-dot ${t.status}"></div>
-      <div class="timeline-date">${t.date}</div>
-      <div class="timeline-title">${t.title}</div>
-      <div class="timeline-tasks">${t.tasks.split("\n").join("<br>")}</div>
-      <button class="timeline-edit-btn" onclick="openEditTimelineModal(${i})">✏️ editar etapa</button>
-    </div>`,
-          )
-          .join("");
-      }
-
-      function updateSummary() {
-        let est = 0,
-          real = 0;
-        for (const cat of appData.categories || [])
-          for (const i of cat.items || []) {
-            est += parseFloat(i.estimated) || 0;
-            real += parseFloat(i.real) || 0;
-          }
-        const diff = real - est;
-        document.getElementById("totalBudget").textContent = fmt(est);
-        document.getElementById("totalSpent").textContent = fmt(real);
-        const de = document.getElementById("totalDiff");
-        de.textContent = (diff > 0 ? "+" : "") + fmt(diff);
-        de.className =
-          "value " + (diff > 0 ? "danger" : diff < 0 ? "sage" : "");
-        const pct = est > 0 ? Math.min(100, (real / est) * 100) : 0;
-        document.getElementById("progressFill").style.width = pct + "%";
-        document.getElementById("progressPct").textContent =
-          Math.round(pct) + "%";
-        let tot = 0,
-          done = 0;
-        for (const g of appData.checklist || []) {
-          tot += g.items.length;
-          done += g.items.filter((i) => i.done).length;
-        }
-        document.getElementById("tasksProgress").textContent =
-          (tot > 0 ? Math.round((done / tot) * 100) : 0) + "%";
-      }
-
-      // ── Actions ──
-      window.toggleCat = (id) => {
-        document.getElementById("catItems-" + id)?.classList.toggle("open");
-        document.getElementById("toggle-" + id)?.classList.toggle("open");
-      };
-      window.updateItem = (catId, itemId, field, value) => {
-        const cat = appData.categories.find((c) => c.id === catId);
-        const item = cat?.items.find((i) => i.id === itemId);
-        if (item) {
-          item[field] = parseFloat(value) || 0;
-          updateSummary();
-          scheduleSave();
-          renderCategories();
-        }
-      };
-      window.cycleStatus = (catId, itemId) => {
-        const ss = ["pending", "progress", "confirmed", "paid"];
-        const cat = appData.categories.find((c) => c.id === catId);
-        const item = cat?.items.find((i) => i.id === itemId);
-        if (item) {
-          item.status = ss[(ss.indexOf(item.status) + 1) % ss.length];
-          renderCategories();
-          scheduleSave();
-        }
-      };
-      window.deleteItem = (catId, itemId) => {
-        const cat = appData.categories.find((c) => c.id === catId);
-        if (cat) {
-          cat.items = cat.items.filter((i) => i.id !== itemId);
-          renderCategories();
-          updateSummary();
-          scheduleSave();
-        }
-      };
-      window.addCategory = () => {
-        const name = prompt("Nombre de la categoría:");
-        if (!name) return;
-        appData.categories.push({
-          id: "cat" + Date.now(),
-          name,
-          icon: "📦",
-          items: [],
-        });
-        renderCategories();
-        scheduleSave();
-      };
-      window.openItemModal = (catId) => {
-        currentCatId = catId;
-        document.getElementById("iName").value = "";
-        document.getElementById("iNote").value = "";
-        document.getElementById("iEstimated").value = "";
-        document.getElementById("itemModal").classList.add("open");
-      };
-      window.closeItemModal = () =>
-        document.getElementById("itemModal").classList.remove("open");
-      window.saveItem = () => {
-        const cat = appData.categories.find((c) => c.id === currentCatId);
-        if (cat) {
-          cat.items.push({
-            id: itemNextId++,
-            name: document.getElementById("iName").value || "Sin nombre",
-            note: document.getElementById("iNote").value,
-            estimated:
-              parseFloat(document.getElementById("iEstimated").value) || 0,
-            real: 0,
-            status: "pending",
-          });
-        }
-        closeItemModal();
-        renderCategories();
-        updateSummary();
-        scheduleSave();
-      };
-      window.toggleCheck = (id) => {
-        for (const g of appData.checklist) {
-          const i = g.items.find((x) => x.id === id);
-          if (i) {
-            i.done = !i.done;
-            break;
-          }
-        }
-        renderChecklist();
-        updateSummary();
-        scheduleSave();
-      };
-      window.openVendorModal = () =>
-        document.getElementById("vendorModal").classList.add("open");
-      window.closeVendorModal = () =>
-        document.getElementById("vendorModal").classList.remove("open");
-      window.saveVendor = () => {
-        if (!appData.vendors) appData.vendors = [];
-        appData.vendors.push({
-          id: Date.now(),
-          cat: document.getElementById("vCat").value,
-          name: document.getElementById("vName").value || "Sin nombre",
-          contact: document.getElementById("vContact").value,
-          price: parseFloat(document.getElementById("vPrice").value) || 0,
-          status: document.getElementById("vStatus").value,
-          notes: document.getElementById("vNotes").value,
-        });
-        closeVendorModal();
-        renderVendors();
-        scheduleSave();
-      };
-      window.cycleVendorStatus = (id) => {
-        const ss = ["pending", "progress", "confirmed", "paid"];
-        const v = appData.vendors?.find((x) => x.id === id);
-        if (v) {
-          v.status = ss[(ss.indexOf(v.status) + 1) % ss.length];
-          renderVendors();
-          scheduleSave();
-        }
-      };
-      window.switchTab = (name, btn) => {
-        document
-          .querySelectorAll(".tab")
-          .forEach((t) => t.classList.remove("active"));
-        document
-          .querySelectorAll(".panel")
-          .forEach((p) => p.classList.remove("active"));
-        document.getElementById("panel-" + name).classList.add("active");
-        btn.classList.add("active");
-      };
-
-      document.getElementById("vendorModal").addEventListener("click", (e) => {
-        if (e.target === e.currentTarget) closeVendorModal();
-      });
-      document.getElementById("itemModal").addEventListener("click", (e) => {
-        if (e.target === e.currentTarget) closeItemModal();
-      });
-
-      // ── Edit Item ──
-      let _editCatId = null,
-        _editItemId = null;
-      window.openEditItemModal = (catId, itemId) => {
-        const cat = appData.categories.find((c) => c.id === catId);
-        const item = cat?.items.find((i) => i.id === itemId);
-        if (!item) return;
-        _editCatId = catId;
-        _editItemId = itemId;
-        document.getElementById("eiName").value = item.name;
-        document.getElementById("eiNote").value = item.note || "";
-        document.getElementById("eiEstimated").value = item.estimated || "";
-        document.getElementById("editItemModal").classList.add("open");
-      };
-      window.closeEditItemModal = () =>
-        document.getElementById("editItemModal").classList.remove("open");
-      window.saveEditItem = () => {
-        const cat = appData.categories.find((c) => c.id === _editCatId);
-        const item = cat?.items.find((i) => i.id === _editItemId);
-        if (item) {
-          item.name = document.getElementById("eiName").value || item.name;
-          item.note = document.getElementById("eiNote").value;
-          item.estimated =
-            parseFloat(document.getElementById("eiEstimated").value) || 0;
-        }
-        closeEditItemModal();
-        renderCategories();
-        updateSummary();
-        scheduleSave();
-      };
-      document
-        .getElementById("editItemModal")
-        .addEventListener("click", (e) => {
-          if (e.target === e.currentTarget) closeEditItemModal();
-        });
-
-      // ── Edit Category ──
-      let _editCatIdCat = null;
-      window.openEditCatModal = (catId) => {
-        const cat = appData.categories.find((c) => c.id === catId);
-        if (!cat) return;
-        _editCatIdCat = catId;
-        document.getElementById("ecName").value = cat.name;
-        document.getElementById("ecIcon").value = cat.icon;
-        document.getElementById("editCatModal").classList.add("open");
-      };
-      window.closeEditCatModal = () =>
-        document.getElementById("editCatModal").classList.remove("open");
-      window.saveEditCat = () => {
-        const cat = appData.categories.find((c) => c.id === _editCatIdCat);
-        if (cat) {
-          cat.name = document.getElementById("ecName").value || cat.name;
-          cat.icon = document.getElementById("ecIcon").value || cat.icon;
-        }
-        closeEditCatModal();
-        renderCategories();
-        scheduleSave();
-      };
-      window.deleteCat = () => {
-        if (!confirm("¿Eliminar esta categoría y todos sus conceptos?")) return;
-        appData.categories = appData.categories.filter(
-          (c) => c.id !== _editCatIdCat,
-        );
-        closeEditCatModal();
-        renderCategories();
-        updateSummary();
-        scheduleSave();
-      };
-      document.getElementById("editCatModal").addEventListener("click", (e) => {
-        if (e.target === e.currentTarget) closeEditCatModal();
-      });
-
-      // ── Edit Check Item ──
-      let _editCheckGi = null,
-        _editCheckId = null;
-      window.openEditCheckModal = (gi, id) => {
-        const item = appData.checklist[gi]?.items.find((x) => x.id === id);
-        if (!item) return;
-        _editCheckGi = gi;
-        _editCheckId = id;
-        document.getElementById("echText").value = item.text;
-        document.getElementById("echNote").value = item.note || "";
-        document.getElementById("echPriority").value = item.priority;
-        document.getElementById("editCheckModal").classList.add("open");
-      };
-      window.closeEditCheckModal = () =>
-        document.getElementById("editCheckModal").classList.remove("open");
-      window.saveEditCheck = () => {
-        const item = appData.checklist[_editCheckGi]?.items.find(
-          (x) => x.id === _editCheckId,
-        );
-        if (item) {
-          item.text = document.getElementById("echText").value || item.text;
-          item.note = document.getElementById("echNote").value;
-          item.priority = document.getElementById("echPriority").value;
-        }
-        closeEditCheckModal();
-        renderChecklist();
-        scheduleSave();
-      };
-      window.deleteCheck = () => {
-        appData.checklist[_editCheckGi].items = appData.checklist[
-          _editCheckGi
-        ].items.filter((x) => x.id !== _editCheckId);
-        closeEditCheckModal();
-        renderChecklist();
-        updateSummary();
-        scheduleSave();
-      };
-      window.openEditGroupModal = (gi) => {
-        const name = prompt("Nombre del grupo:", appData.checklist[gi].group);
-        if (name) {
-          appData.checklist[gi].group = name;
-          renderChecklist();
-          scheduleSave();
-        }
-      };
-      window.addCheckItem = (gi) => {
-        const text = prompt("Nombre de la tarea:");
-        if (!text) return;
-        appData.checklist[gi].items.push({
-          id: "c" + Date.now(),
-          text,
-          note: "",
-          done: false,
-          priority: "media",
-        });
-        renderChecklist();
-        scheduleSave();
-      };
-      document
-        .getElementById("editCheckModal")
-        .addEventListener("click", (e) => {
-          if (e.target === e.currentTarget) closeEditCheckModal();
-        });
-
-      // ── Edit Timeline ──
-      let _editTimelineIdx = null;
-      window.openEditTimelineModal = (i) => {
-        const t = appData.timeline[i];
-        if (!t) return;
-        _editTimelineIdx = i;
-        document.getElementById("etDate").value = t.date;
-        document.getElementById("etTitle").value = t.title;
-        document.getElementById("etTasks").value = t.tasks;
-        document.getElementById("editTimelineModal").classList.add("open");
-      };
-      window.closeEditTimelineModal = () =>
-        document.getElementById("editTimelineModal").classList.remove("open");
-      window.saveEditTimeline = () => {
-        const t = appData.timeline[_editTimelineIdx];
-        if (t) {
-          t.date = document.getElementById("etDate").value || t.date;
-          t.title = document.getElementById("etTitle").value || t.title;
-          t.tasks = document.getElementById("etTasks").value || t.tasks;
-        }
-        closeEditTimelineModal();
-        renderTimeline();
-        scheduleSave();
-      };
-      document
-        .getElementById("editTimelineModal")
-        .addEventListener("click", (e) => {
-          if (e.target === e.currentTarget) closeEditTimelineModal();
-        });
-
-      // ── Edit Vendor ──
-      let _editVendorId = null;
-      window.openEditVendorModal = (id) => {
-        const v = appData.vendors?.find((x) => x.id === id);
-        if (!v) return;
-        _editVendorId = id;
-        document.getElementById("evCat").value = v.cat;
-        document.getElementById("evName").value = v.name;
-        document.getElementById("evContact").value = v.contact || "";
-        document.getElementById("evPrice").value = v.price || "";
-        document.getElementById("evStatus").value = v.status;
-        document.getElementById("evNotes").value = v.notes || "";
-        document.getElementById("editVendorModal").classList.add("open");
-      };
-      window.closeEditVendorModal = () =>
-        document.getElementById("editVendorModal").classList.remove("open");
-      window.saveEditVendor = () => {
-        const v = appData.vendors?.find((x) => x.id === _editVendorId);
-        if (v) {
-          v.cat = document.getElementById("evCat").value;
-          v.name = document.getElementById("evName").value || v.name;
-          v.contact = document.getElementById("evContact").value;
-          v.price = parseFloat(document.getElementById("evPrice").value) || 0;
-          v.status = document.getElementById("evStatus").value;
-          v.notes = document.getElementById("evNotes").value;
-        }
-        closeEditVendorModal();
-        renderVendors();
-        scheduleSave();
-      };
-      window.deleteVendor = () => {
-        if (!confirm("¿Eliminar este proveedor?")) return;
-        appData.vendors = appData.vendors.filter((x) => x.id !== _editVendorId);
-        closeEditVendorModal();
-        renderVendors();
-        scheduleSave();
-      };
-      document
-        .getElementById("editVendorModal")
-        .addEventListener("click", (e) => {
-          if (e.target === e.currentTarget) closeEditVendorModal();
-        });
-
-      loadFromFirebase();
-    </script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
