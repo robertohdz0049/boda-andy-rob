@@ -1876,16 +1876,30 @@ function renderPinterest() {
   var pt = appData.pinterest || {};
   if (pt.url) {
     c.innerHTML =
-      "<div class='pinterest-wrap'><div class='pinterest-title'>Tablero de Inspiracion</div><div class='pinterest-sub'>Ideas para la boda de Andy y Rob</div><div style='font-size:12px;color:var(--gold);margin-bottom:20px'>" +
-      (pt.nombre || "Nuestro tablero") +
-      "</div><a href='" +
-      pt.url +
-      "' target='_blank' class='pinterest-btn'>Abrir en Pinterest</a><div style='margin-top:16px'><button class='add-item-btn' onclick='openPinterestModal()'>Cambiar liga</button></div></div>";
+      "<div class='pinterest-wrap'>" +
+      "<div class='pinterest-title'>Tablero de Inspiracion</div>" +
+      "<div class='pinterest-sub'>Ideas para la boda de Andy y Rob</div>" +
+      "<div style='font-size:14px;color:var(--gold);margin-bottom:16px'>" + (pt.nombre || "Nuestro tablero") + "</div>" +
+      "<a href='" + pt.url + "' target='_blank' class='pinterest-btn'>Abrir en Pinterest</a>" +
+      "<div style='margin-top:20px;background:var(--warm-white);border:1px solid var(--border);border-radius:2px;padding:12px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap'>" +
+      "<span style='font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);flex-shrink:0'>Liga:</span>" +
+      "<span style='font-size:11px;color:var(--dark);word-break:break-all;flex:1'>" + pt.url + "</span>" +
+      "<button onclick='copyPinterestUrl()' style='background:var(--dark);color:var(--cream);border:none;padding:6px 14px;font-family:DM Mono,monospace;font-size:10px;letter-spacing:1px;cursor:pointer;border-radius:2px;flex-shrink:0' id='ptCopyBtn'>Copiar</button>" +
+      "</div>" +
+      "<div style='margin-top:12px'><button class='add-item-btn' onclick='openPinterestModal()'>Cambiar liga</button></div>" +
+      "</div>";
   } else {
     c.innerHTML =
-      "<div class='pinterest-wrap'><div class='pinterest-title'>Tablero de Inspiracion</div><div class='pinterest-sub'>Ideas para la boda de Andy y Rob</div><div style='color:var(--muted);font-size:13px;margin-bottom:20px'>Aun no han guardado su tablero de Pinterest.</div><button class='pinterest-btn' onclick='openPinterestModal()'>+ Agregar liga</button></div>";
+      "<div class='pinterest-wrap'>" +
+      "<div class='pinterest-title'>Tablero de Inspiracion</div>" +
+      "<div class='pinterest-sub'>Ideas para la boda de Andy y Rob</div>" +
+      "<div style='color:var(--muted);font-size:13px;margin-bottom:20px'>Aun no han guardado su tablero de Pinterest.</div>" +
+      "<button class='pinterest-btn' onclick='openPinterestModal()'>+ Agregar liga</button>" +
+      "</div>";
   }
 }
+
+
 window.openPinterestModal = function () {
   var pt = appData.pinterest || {};
   document.getElementById("ptUrl").value = pt.url || "";
@@ -2486,6 +2500,14 @@ window.deleteTimeline = function () {
   closeEditTimelineModal();
   renderTimeline();
   scheduleSave();
+};
+window.copyPinterestUrl = function() {
+  var url = (appData.pinterest || {}).url || "";
+  if (!url) return;
+  navigator.clipboard.writeText(url).then(function() {
+    var btn = document.querySelector("#pinterestContainer button[onclick*=copy]");
+    if (btn) { btn.textContent = "Copiado!"; setTimeout(function(){ btn.textContent = "Copiar"; }, 2000); }
+  });
 };
 window.deleteCita = function () {
   if (!confirm("¿Eliminar esta cita?")) return;
